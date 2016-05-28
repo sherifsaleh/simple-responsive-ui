@@ -1,12 +1,16 @@
-#General description
+# General description
 Implement HTML5/CSS3 solution for specified responsive UI design.
-##Scope
+
+## Scope
 * Solution must work in IE11+ and Chrome 41+
 * Stylesheets must be written in SASS or LESS
 * Any publicly available CSS library or framework can (but does not have to) be used
 * Bonus points for using semantic HTML5 markup
-##Requirements
+
+
+## Requirements
 Implement the following responsive layout:
+
 * Body with pink background, body font size 5 times the default browser font size (16px @100% zoom)
 * Left purple panel with vertically & horizontally centered 'X' char, 1.5 times wider than the body font size, tall as the browser window
 * Top-right panel with 10 left-aligned 'X' chars, wrapping to the next line if the window is too narrow
