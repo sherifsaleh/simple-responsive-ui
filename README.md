@@ -17,3 +17,16 @@ Implement the following responsive layout:
 * 4 panels with vertically & horizontally centered '1', '2', '3' and '4', 1.5 times taller than the body font size
   * Equally sized 2 panels per row in a narrow browser window (when 'X' chars in top-right panel fit on one line)
   * Equally sized 4 panels per row in a wide browser window (when 'X' chars in top-right panel do not fit on one line)
+
+
+## Installation
+
+Run this commande
+
+```sh
+$ git clone git@github.com:sherifsaleh/simple-responsive-ui.git
+```
+
+```sh
+$ npm install && bower install
+```

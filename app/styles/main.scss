@@ -1,31 +1,111 @@
 // bower:scss
+@import '_normalize';
 // endbower
+@import '_h5bp';
+
+/* Body
+   --------------------------------------------------- */
 
 body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+    font-family: serif;
+    // setting default font size to 5em = 80px
+    font-size: 5em;
+    background-color: pink;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
+
+/* sidebar
+   --------------------------------------------------- */
+
+.l-sidebar {
+    width: 1.5em;
+    //height: 100vh;
+    // preferred position fixed  to fix on scroll
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: purple;
+}
+
+.l-sidebar__title {
     line-height: 1;
-    letter-spacing: -1px;
-  }
+    margin: 0;
+    @extend .fw-normal;
+    @extend .fs-base;
+    // center element v and h
+    @extend .e-center;
 }
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+
+/* Main content
+--------------------------------------------------- */
+
+.l-main {
+    width: calc(100% - 1.5em);
+    margin-left: 1.5em;
+    //@extend .f-left;
 }
+
+.main__title {
+
+    @extend .fw-normal;
+    @extend .margin-0;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    -ms-hyphens: auto;
+
+}
+
+
+/* Articles
+--------------------------------------------------- */
+
+section {
+    @extend .clearfix;
+}
+
+article {
+    width: 50%;
+    @extend .f-left;
+    @media only screen and (min-width: 960px) {
+        width: 25%;
+    }
+}
+
+.article {
+    height: 1.5em;
+    background-color: yellow;
+    @extend .ta-center;
+    @extend .p-relative;
+}
+
+.article--2 {
+    background-color: orange;
+}
+
+.article--3 {
+    background-color: red;
+}
+
+.article--4 {
+    background-color: Brown;
+}
+
+.article__title {
+    line-height: 1;
+    @extend .margin-0;
+    @extend .fw-normal;
+    @extend .fs-base;
+    @extend .e-center;
+}
+
+@import '_helper-classes';
+@import '_media-queries';
+@import '_print';
